@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Tècnica Nº 7 DE 5 - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'alumnos/css/base.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Escuela Tècnia Nº 7 de 5to - "Dolores Lavalle de Lavalle"</h1>
+        <h2>{% block section_title %}{% endblock %}</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            
+            
+        </ul>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        {% include "alumnos/footer.html" %}
+    </footer>
+</body>
+</html>
