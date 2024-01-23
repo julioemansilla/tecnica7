@@ -1,0 +1,11 @@
+{% extends "alumnos/base.html" %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'alumnos/css/index.css' %}">
+<link rel="stylesheet" href="{% static 'alumnos/css/docentes.css' %}">
+{% endblock %}
+{% block title %} Docentes {% endblock %}
+{% block section_title %} {% endblock %}
+{% block content %} 
+    <h2>Sección Docentes</h2>
+{% endblock %}

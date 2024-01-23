@@ -3,9 +3,11 @@
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'alumnos/css/index.css' %}">
 {% endblock %}
-{% block title %}{% endblock %}
-{% block section_title %} {% endblock %}
+{% block title %}Inicio{% endblock %}
+{% block section_title %}{% endblock %}
 {% block content %}
-    <h2>Bienvenidos al Aula Virtual 2.0</h2>
+    <h2>Bienvenidos</h2>
     <p>Usuario logueado como: <b>{{ nombre_usuario }}</b></p>
+
+    <img src="{% static 'alumnos/img/frente_et7.jpg' %}" alt="Edificio_Zavaleta">
 {% endblock %}

@@ -1,1 +1,9 @@
-<p>Todos los Derechos Reservados - JM 2023</p>
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'alumnos/css/footer.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <p>Todos los Derechos Reservados - JM 2023</p>
+{% endblock %}

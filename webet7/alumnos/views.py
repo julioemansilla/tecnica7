@@ -3,22 +3,25 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, "alumnos/index.html")
+    context = {
+       'nombre_usuario': 'Julio M'
+    }
+    return render(request, "alumnos/index.html", context)
 
 def alumnos(request):
     return render(request, "alumnos/alumnos.html")
 
 def cursos(request):
-    return render(request, "cursos.html")
+    return render(request, "alumnos/cursos.html")
 
 def docentes(request):
-    return render(request, "docentes.html")
+    return render(request, "alumnos/docentes.html")
 
 def novedades(request):
-    return render(request, "novedades.html")
+    return render(request, "alumnos/novedades.html")
 
 def tramites(request):
-    return render(request, "tramites.html")
+    return render(request, "alumnos/tramites.html")
 
 
 
